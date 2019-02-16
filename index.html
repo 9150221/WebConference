@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="../js/webconf.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <!--Barra de Navegação-->
+      <a class="navbar-brand " href="#page-top">WebConference</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!--Itens de Navegação-->
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="navbar-item">
+            <a class="nav-link" href="#sobre">sobre</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#speakers">speakers</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#sponsors">sponsors</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#contacts">contacts</a>
+          </li>
+        </ul>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <header class="masthead">
+      <!--Imagem principal e botao de inscriçao na conferencia-->
+      <div class="container">
+        <div class="intro-text">
+          <!--Título-->
+          <div class="intro-lead-id">Vamos celebrar Web!</div>
+          <div class="intro-heading text-uppercase">WebConference</div>
+          <!--Botão de inscrição-->
+          <a
+            class="btn btn-primary btn-xl text-uppercase"
+            href="#"
+            id="btnRegister"
+          >
+            inscrever
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <!--Informação basica sobre a conferencia-->
+      <div class="container">
+        <div class="row">
+          <!--Titulo e texto principal-->
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Sobre</h2>
+            <h3 class="section-subheading">Conferencia sobre a Web a decorrer no dia 22 de maio de 2019, no Pavilhão da Web, Porto</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!--Topicos-->
+          <div class="col-md-6" id="topico">
+            <!--topico nº1-->
+            <span class="fa-stack fa-4x">
+              <i class ="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class ="fas fa-globe fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="topic-heading">Computação Ubíqua</h4>
+            <p class="text-muted">Expandir a Web para fora do computador e ligá-la à Internet das coisas</p>
+          </div>
+          <div class="col-md-6" id="topico">
+            <!--topico nº2-->
+            <span class="fa-stack fa-4x">
+              <i class ="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class ="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="topic-heading">Responsividade</h4>
+            <p class="text-muted">Adaptar as aplicações Web a múltiplos dispositivos e torná-las mais responsivas em termos de performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="speakers">
+      <div class="container">
+          <div class="row">
+              <!--Titulo e texto principal-->
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Oradores</h2>
+                <h3 class="section-subheading">Especialistas internacionais do mundo da Web</h3>
+              </div>
+            </div>
+     
+      <!--Informação sobre os oradores da conferencia-->
+      <div class="row" id="renderSpeakers">
+        <!--conteudo a ser injetado pelo javascriot-->
+      </div>
+      <div class="row" id="renderSpeakers">
+        <div class="col-sm-4">
+          <div class="team-member"id="topico">
+            <!--Oradornº1-->
+            <img class="mx-auto rounded-circle" src="../img/team/1.jpg" alt="">
+            <h4>Kay Garland</h4>
+            <p class="text-muted">Lead Designer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <!--Oradornº2-->
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <!--Oradornº3-->
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <!--Oradornºx-->
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="sponsors">
+        <div class="container">
+            <div class="row">
+                <!--Titulo e texto principal-->
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Sponsors</h2>
+                
+                </div>
+              </div>
+       
+      <!--Informação sobre os sponsors da conferencia-->
+      <div class ="row" id="renderSponsors">
+       <!--conteudo a ser injetado pelo javascript--> 
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="container">
+        <div class="row">
+          <!--Titulo e texto principal-->
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contactos</h2>
+            <h3 class="section-subheading">Deixe-nos a sua sugestão/dúvida e nós rapidamente entraremos em contacto consigo!
+            </h3>
+          </div>
+        </div>
+    
+        <!--Formulario para contactos e mapa-->
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sendMessage">
+              <div class="row">
+                <div class="col-md-6">
+                  <!--campo nome-->
+                  <div class="form-group">
+                    <input id="name" class="form-control" type="text" placeholder="o seu nome" required>
+                  </div>
+                  <!--campo email-->
+                  <div class="form-group">
+                    <input id="email" class="form-control" type="e-mail" placeholder="o seu e-mail" required>
+                  </div>
+                  <!--campo telemovel-->
+                  <div class="form-group">
+                    <input id="number" class="form-control" type="number" placeholder="o seu nº de telemovel" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!--campo mensagem-->
+                  <div class="form-group">
+                    <input id="message" class="form-control" type="text" placeholder="a sua mensagem" required>
+                  </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <!--botao de envio da mensagem-->
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar
+                    mensagem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+      
+    </section>
+    <div class ="container-fluid" id="googleMap">
+      <div class="row">
+        
+      </div>
+    </div>
+      <footer>
+        <!--links para as redes sociais e copyright-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!--informacao sobre copyright-->
+              <span class="copyright">
+                Copyright &copy; WebConference 2019
+              </span>
+            </div>
+            <div class="col-md-6">
+              <!--icones com links -->
+              <ul class ="list-inline social-buttons">
+                <li class ="list-inline-item">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class ="list-inline-item">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class ="list-inline-item">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  </body>
+</html>
